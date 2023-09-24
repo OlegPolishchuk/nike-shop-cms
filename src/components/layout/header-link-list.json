@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_layout_header_link_lists",
+  "info": {
+    "displayName": "HeaderLinkList"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

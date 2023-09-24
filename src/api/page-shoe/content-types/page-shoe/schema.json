@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_shoes",
+  "info": {
+    "singularName": "page-shoe",
+    "pluralName": "page-shoes",
+    "displayName": "PageShoe"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "banner_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner-section.banner-section"
+    },
+    "section_shoe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-shoe.section-shoe"
+    },
+    "section_trend": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-trend.section-trend"
+    }
+  }
+}

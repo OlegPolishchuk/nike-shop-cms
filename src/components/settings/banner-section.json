@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_settings_banner_sections",
+  "info": {
+    "displayName": "BannerSection"
+  },
+  "options": {},
+  "attributes": {
+    "show": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

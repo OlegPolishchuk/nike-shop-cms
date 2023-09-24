@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_banner_cards",
+  "info": {
+    "displayName": "BannerCard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

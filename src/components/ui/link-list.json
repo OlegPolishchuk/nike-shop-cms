@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ui_link_lists",
+  "info": {
+    "displayName": "LinkList"
+  },
+  "options": {},
+  "attributes": {
+    "Link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.link",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

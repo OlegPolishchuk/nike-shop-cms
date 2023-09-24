@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "section_trends",
+  "info": {
+    "singularName": "section-trend",
+    "pluralName": "section-trends",
+    "displayName": "SectionTrend"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "SectionTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    }
+  }
+}

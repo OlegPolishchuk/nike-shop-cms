@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_entity_shoe_options",
+  "info": {
+    "displayName": "ShoeOption"
+  },
+  "options": {},
+  "attributes": {
+    "medias": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
