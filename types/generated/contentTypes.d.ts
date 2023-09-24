@@ -1025,14 +1025,6 @@ export interface ApiSectionMainTitleSectionMainTitle
     };
   };
   attributes: {
-    MainTitle: Attribute.String &
-      Attribute.Required &
-      Attribute.Unique &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     SubTitle: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1053,6 +1045,7 @@ export interface ApiSectionMainTitleSectionMainTitle
         };
       }>;
     WatchLinkButton: Attribute.Component<'ui.button'> &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1061,6 +1054,13 @@ export interface ApiSectionMainTitleSectionMainTitle
     Title: Attribute.String &
       Attribute.Required &
       Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    MainTitle: Attribute.RichText &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

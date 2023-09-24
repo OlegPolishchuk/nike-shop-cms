@@ -50,6 +50,7 @@ export interface UiButton extends Schema.Component {
   attributes: {
     title: Attribute.String & Attribute.Required;
     href: Attribute.String;
+    label: Attribute.String;
   };
 }
 
