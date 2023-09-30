@@ -921,6 +921,11 @@ export interface ApiPageHomePageHome extends Schema.CollectionType {
       'oneToOne',
       'api::section-membership.section-membership'
     >;
+    section_popular: Attribute.Relation<
+      'api::page-home.page-home',
+      'oneToOne',
+      'api::section-popular.section-popular'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1157,6 +1162,68 @@ export interface ApiSectionMembershipSectionMembership
       'api::section-membership.section-membership',
       'oneToMany',
       'api::section-membership.section-membership'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiSectionPopularSectionPopular extends Schema.CollectionType {
+  collectionName: 'section_populars';
+  info: {
+    singularName: 'section-popular';
+    pluralName: 'section-populars';
+    displayName: 'SectionPopular';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sectionTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    card: Attribute.Component<'ui.shoe-card-for-carousel', true> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::section-popular.section-popular',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::section-popular.section-popular',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::section-popular.section-popular',
+      'oneToMany',
+      'api::section-popular.section-popular'
     >;
     locale: Attribute.String;
   };
@@ -1483,6 +1550,7 @@ declare module '@strapi/strapi' {
       'api::page-shoe.page-shoe': ApiPageShoePageShoe;
       'api::section-main-title.section-main-title': ApiSectionMainTitleSectionMainTitle;
       'api::section-membership.section-membership': ApiSectionMembershipSectionMembership;
+      'api::section-popular.section-popular': ApiSectionPopularSectionPopular;
       'api::section-shoe.section-shoe': ApiSectionShoeSectionShoe;
       'api::section-trend.section-trend': ApiSectionTrendSectionTrend;
       'api::shoe.shoe': ApiShoeShoe;

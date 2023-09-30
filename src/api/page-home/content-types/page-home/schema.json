@@ -56,6 +56,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::section-membership.section-membership"
+    },
+    "section_popular": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-popular.section-popular"
     }
   }
 }

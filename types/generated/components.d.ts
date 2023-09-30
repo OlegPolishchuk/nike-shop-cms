@@ -102,6 +102,21 @@ export interface UiMembershipCard extends Schema.Component {
   };
 }
 
+export interface UiShoeCardForCarousel extends Schema.Component {
+  collectionName: 'components_ui_shoe_card_for_carousels';
+  info: {
+    displayName: 'ShoeCardForCarousel';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    price: Attribute.String & Attribute.Required;
+    tag: Attribute.String & Attribute.Required;
+    media: Attribute.Media & Attribute.Required;
+    link: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface UiTrendCard extends Schema.Component {
   collectionName: 'components_ui_trend_cards';
   info: {
@@ -127,6 +142,7 @@ declare module '@strapi/strapi' {
       'ui.link-list': UiLinkList;
       'ui.link': UiLink;
       'ui.membership-card': UiMembershipCard;
+      'ui.shoe-card-for-carousel': UiShoeCardForCarousel;
       'ui.trend-card': UiTrendCard;
     }
   }
