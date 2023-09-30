@@ -48,9 +48,8 @@ export interface UiButton extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String & Attribute.Required;
-    href: Attribute.String;
     label: Attribute.String;
+    href: Attribute.String;
   };
 }
 
@@ -58,11 +57,12 @@ export interface UiFigure extends Schema.Component {
   collectionName: 'components_ui_figures';
   info: {
     displayName: 'figure';
+    description: '';
   };
   attributes: {
     caption: Attribute.String;
     LinkButton: Attribute.Component<'ui.button', true>;
-    image: Attribute.Media & Attribute.Required;
+    image: Attribute.Media;
   };
 }
 
@@ -88,6 +88,33 @@ export interface UiLink extends Schema.Component {
   };
 }
 
+export interface UiMembershipCard extends Schema.Component {
+  collectionName: 'components_ui_membership_cards';
+  info: {
+    displayName: 'MembershipCard';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    subtitle: Attribute.String;
+    image: Attribute.Media & Attribute.Required;
+    link: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface UiTrendCard extends Schema.Component {
+  collectionName: 'components_ui_trend_cards';
+  info: {
+    displayName: 'TrendCard';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    image: Attribute.Media & Attribute.Required;
+    link: Attribute.String & Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Shared {
     export interface Components {
@@ -99,6 +126,8 @@ declare module '@strapi/strapi' {
       'ui.figure': UiFigure;
       'ui.link-list': UiLinkList;
       'ui.link': UiLink;
+      'ui.membership-card': UiMembershipCard;
+      'ui.trend-card': UiTrendCard;
     }
   }
 }

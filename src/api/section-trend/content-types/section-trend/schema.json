@@ -4,7 +4,8 @@
   "info": {
     "singularName": "section-trend",
     "pluralName": "section-trends",
-    "displayName": "SectionTrend"
+    "displayName": "SectionTrend",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,6 +33,17 @@
         }
       },
       "type": "string",
+      "required": true
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.trend-card",
       "required": true
     }
   }

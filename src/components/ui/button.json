@@ -6,14 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "label": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "href": {
-      "type": "string"
-    },
-    "label": {
       "type": "string"
     }
   }

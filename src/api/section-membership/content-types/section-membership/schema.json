@@ -4,8 +4,7 @@
   "info": {
     "singularName": "section-membership",
     "pluralName": "section-memberships",
-    "displayName": "SectionMembership",
-    "description": ""
+    "displayName": "SectionMembership"
   },
   "options": {
     "draftAndPublish": true
@@ -22,9 +21,36 @@
           "localized": true
         }
       },
-      "type": "string",
-      "required": true,
-      "unique": true
+      "type": "richtext",
+      "required": true
+    },
+    "subtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "JoinUsButton": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.button"
+    },
+    "SignInButton": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.button"
     },
     "card": {
       "type": "component",
@@ -34,10 +60,7 @@
           "localized": true
         }
       },
-      "component": "ui.figure",
-      "max": 2,
-      "min": 2,
-      "required": true
+      "component": "ui.membership-card"
     }
   }
 }

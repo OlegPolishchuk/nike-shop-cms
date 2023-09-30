@@ -911,15 +911,15 @@ export interface ApiPageHomePageHome extends Schema.CollectionType {
       'oneToOne',
       'api::banner-section.banner-section'
     >;
-    section_membership: Attribute.Relation<
-      'api::page-home.page-home',
-      'oneToOne',
-      'api::section-membership.section-membership'
-    >;
     section_trend: Attribute.Relation<
       'api::page-home.page-home',
       'oneToOne',
       'api::section-trend.section-trend'
+    >;
+    section_membership: Attribute.Relation<
+      'api::page-home.page-home',
+      'oneToOne',
+      'api::section-membership.section-membership'
     >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1097,7 +1097,6 @@ export interface ApiSectionMembershipSectionMembership
     singularName: 'section-membership';
     pluralName: 'section-memberships';
     displayName: 'SectionMembership';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1108,24 +1107,36 @@ export interface ApiSectionMembershipSectionMembership
     };
   };
   attributes: {
-    title: Attribute.String &
+    title: Attribute.RichText &
       Attribute.Required &
-      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    card: Attribute.Component<'ui.figure', true> &
-      Attribute.Required &
+    subtitle: Attribute.String &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
-      }> &
-      Attribute.SetMinMax<{
-        min: 2;
-        max: 2;
+      }>;
+    JoinUsButton: Attribute.Component<'ui.button'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    SignInButton: Attribute.Component<'ui.button'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    card: Attribute.Component<'ui.membership-card', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
       }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -1223,6 +1234,7 @@ export interface ApiSectionTrendSectionTrend extends Schema.CollectionType {
     singularName: 'section-trend';
     pluralName: 'section-trends';
     displayName: 'SectionTrend';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1242,6 +1254,13 @@ export interface ApiSectionTrendSectionTrend extends Schema.CollectionType {
         };
       }>;
     SectionTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    card: Attribute.Component<'ui.trend-card', true> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {

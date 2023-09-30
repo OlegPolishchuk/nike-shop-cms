@@ -47,15 +47,15 @@
       "relation": "oneToOne",
       "target": "api::banner-section.banner-section"
     },
-    "section_membership": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::section-membership.section-membership"
-    },
     "section_trend": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::section-trend.section-trend"
+    },
+    "section_membership": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-membership.section-membership"
     }
   }
 }
