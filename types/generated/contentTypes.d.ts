@@ -792,6 +792,66 @@ export interface ApiCountryCountry extends Schema.CollectionType {
   };
 }
 
+export interface ApiGoodsPageGoodsPage extends Schema.CollectionType {
+  collectionName: 'goods_pages';
+  info: {
+    singularName: 'goods-page';
+    pluralName: 'goods-pages';
+    displayName: 'GoodsPage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    pageTitle: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    good: Attribute.Component<'ui.shoe-card-for-carousel', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::goods-page.goods-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::goods-page.goods-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::goods-page.goods-page',
+      'oneToMany',
+      'api::goods-page.goods-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLanguageLanguage extends Schema.CollectionType {
   collectionName: 'languages';
   info: {
@@ -1544,6 +1604,7 @@ declare module '@strapi/strapi' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::banner-section.banner-section': ApiBannerSectionBannerSection;
       'api::country.country': ApiCountryCountry;
+      'api::goods-page.goods-page': ApiGoodsPageGoodsPage;
       'api::language.language': ApiLanguageLanguage;
       'api::layout-header.layout-header': ApiLayoutHeaderLayoutHeader;
       'api::page-home.page-home': ApiPageHomePageHome;
