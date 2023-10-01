@@ -4,9 +4,14 @@ export interface EntityShoeOption extends Schema.Component {
   collectionName: 'components_entity_shoe_options';
   info: {
     displayName: 'ShoeOption';
+    description: '';
   };
   attributes: {
     medias: Attribute.Media;
+    title: Attribute.String & Attribute.Required;
+    tag: Attribute.String & Attribute.Required;
+    price: Attribute.String & Attribute.Required;
+    description: Attribute.RichText;
   };
 }
 

@@ -1246,13 +1246,6 @@ export interface ApiSectionShoeSectionShoe extends Schema.CollectionType {
     };
   };
   attributes: {
-    title: Attribute.String &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     addToBagButton: Attribute.Component<'ui.button'> &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1266,6 +1259,13 @@ export interface ApiSectionShoeSectionShoe extends Schema.CollectionType {
         };
       }>;
     detailsButton: Attribute.Component<'ui.button', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    options: Attribute.Component<'entity.shoe-option'> &
+      Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

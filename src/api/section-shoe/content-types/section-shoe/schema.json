@@ -16,15 +16,6 @@
     }
   },
   "attributes": {
-    "title": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "addToBagButton": {
       "type": "component",
       "repeatable": false,
@@ -54,6 +45,17 @@
         }
       },
       "component": "ui.button"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "entity.shoe-option",
+      "required": true
     }
   }
 }

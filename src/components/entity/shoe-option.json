@@ -1,19 +1,36 @@
 {
   "collectionName": "components_entity_shoe_options",
   "info": {
-    "displayName": "ShoeOption"
+    "displayName": "ShoeOption",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "medias": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
