@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w11_m9_5s",
+  "info": {
+    "displayName": "W11/M9.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 11 / M 9.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

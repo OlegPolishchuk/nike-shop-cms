@@ -56,6 +56,47 @@
       },
       "component": "entity.shoe-option",
       "required": true
+    },
+    "KidSizes": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "settings.kid-sizes"
+    },
+    "MenSizes": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "settings.men-sizes"
+    },
+    "WomenSizes": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "settings.women-sizes"
+    },
+    "sizes": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ui.sizes",
+      "required": true
     }
   }
 }

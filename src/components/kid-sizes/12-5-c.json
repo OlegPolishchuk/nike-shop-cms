@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_kid_sizes_12_5_cs",
+  "info": {
+    "displayName": "12.5C"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "12.5C"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

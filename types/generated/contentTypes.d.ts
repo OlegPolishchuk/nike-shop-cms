@@ -852,6 +852,195 @@ export interface ApiGoodsPageGoodsPage extends Schema.CollectionType {
   };
 }
 
+export interface ApiHomePageHomePage extends Schema.SingleType {
+  collectionName: 'home_pages';
+  info: {
+    singularName: 'home-page';
+    pluralName: 'home-pages';
+    displayName: 'HomePage';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    section_main_title: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'api::section-main-title.section-main-title'
+    >;
+    banner_section: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'api::banner-section.banner-section'
+    >;
+    section_membership: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'api::section-membership.section-membership'
+    >;
+    section_popular: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'api::section-popular.section-popular'
+    >;
+    section_trend: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'api::section-trend.section-trend'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToMany',
+      'api::home-page.home-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiKidSizeKidSize extends Schema.CollectionType {
+  collectionName: 'kid_sizes';
+  info: {
+    singularName: 'kid-size';
+    pluralName: 'kid-sizes';
+    displayName: 'KidSize';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    c105: Attribute.Component<'kid-sizes.10-5-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c11: Attribute.Component<'kid-sizes.11-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c115: Attribute.Component<'kid-sizes.11-5-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c12: Attribute.Component<'kid-sizes.12-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c125: Attribute.Component<'kid-sizes.12-5-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c13: Attribute.Component<'kid-sizes.13-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    c135: Attribute.Component<'kid-sizes.13-5-c'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    y1: Attribute.Component<'kid-sizes.1-y'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    y15: Attribute.Component<'kid-sizes.1-5-y'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    y2: Attribute.Component<'kid-sizes.2-y'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    y25: Attribute.Component<'kid-sizes.2-5-y'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    y3: Attribute.Component<'kid-sizes.3-y'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::kid-size.kid-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::kid-size.kid-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::kid-size.kid-size',
+      'oneToMany',
+      'api::kid-size.kid-size'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiLanguageLanguage extends Schema.CollectionType {
   collectionName: 'languages';
   info: {
@@ -924,6 +1113,172 @@ export interface ApiLayoutHeaderLayoutHeader extends Schema.CollectionType {
       'api::layout-header.layout-header',
       'oneToMany',
       'api::layout-header.layout-header'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiMenSizeMenSize extends Schema.CollectionType {
+  collectionName: 'men_sizes';
+  info: {
+    singularName: 'men-size';
+    pluralName: 'men-sizes';
+    displayName: 'MenSize';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    m7: Attribute.Component<'men-sizes.m7-w8-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m75: Attribute.Component<'men-sizes.m7-5-w9'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m8: Attribute.Component<'men-sizes.m8-w9-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m85: Attribute.Component<'men-sizes.m8-5-w10'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m9: Attribute.Component<'men-sizes.m9-w10-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    n95: Attribute.Component<'men-sizes.m9-5-w11'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m10: Attribute.Component<'men-sizes.m10-w11-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m105: Attribute.Component<'men-sizes.m10-5-w12'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m11: Attribute.Component<'men-sizes.m11-w12-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m115: Attribute.Component<'men-sizes.m11-5-w13'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m12: Attribute.Component<'men-sizes.m12-w13-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m125: Attribute.Component<'men-sizes.m12-5-w14'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m13: Attribute.Component<'men-sizes.m13-w14-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m14: Attribute.Component<'men-sizes.m14-w15-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m15: Attribute.Component<'men-sizes.m15-w16-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m16: Attribute.Component<'men-sizes.m16-w17-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m17: Attribute.Component<'men-sizes.m17-w18-5'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    m18: Attribute.Component<'men-sizes.m18-w19-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::men-size.men-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::men-size.men-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::men-size.men-size',
+      'oneToMany',
+      'api::men-size.men-size'
     >;
     locale: Attribute.String;
   };
@@ -1331,6 +1686,31 @@ export interface ApiSectionShoeSectionShoe extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    KidSizes: Attribute.Component<'settings.kid-sizes'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    MenSizes: Attribute.Component<'settings.men-sizes'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    WomenSizes: Attribute.Component<'settings.women-sizes'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    sizes: Attribute.Component<'ui.sizes'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1498,6 +1878,7 @@ export interface ApiSizeSize extends Schema.CollectionType {
     singularName: 'size';
     pluralName: 'sizes';
     displayName: 'Size';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1508,15 +1889,7 @@ export interface ApiSizeSize extends Schema.CollectionType {
     };
   };
   attributes: {
-    name: Attribute.String &
-      Attribute.Required &
-      Attribute.Unique &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    values: Attribute.String &
+    Sizes: Attribute.Component<'settings.size', true> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1586,6 +1959,151 @@ export interface ApiTypeType extends Schema.CollectionType {
   };
 }
 
+export interface ApiWomenSizeWomenSize extends Schema.CollectionType {
+  collectionName: 'women_sizes';
+  info: {
+    singularName: 'women-size';
+    pluralName: 'women-sizes';
+    displayName: 'WomenSize';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    w5: Attribute.Component<'women-sizes.w5-m3-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w55: Attribute.Component<'women-sizes.w5-5-m4'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w6: Attribute.Component<'women-sizes.w6-m4-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w65: Attribute.Component<'women-sizes.w6-5-m5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w7: Attribute.Component<'women-sizes.w7-m5-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w75: Attribute.Component<'women-sizes.w7-5-m6'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w8: Attribute.Component<'women-sizes.w8-m6-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w85: Attribute.Component<'women-sizes.w8-5-m7'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w9: Attribute.Component<'women-sizes.w9-m7-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w95: Attribute.Component<'women-sizes.w9-5-m8'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w10: Attribute.Component<'women-sizes.w10-m8-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w105: Attribute.Component<'women-sizes.w10-5-m9'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w11: Attribute.Component<'women-sizes.w11-m9-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w115: Attribute.Component<'women-sizes.w11-5-m10'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    w12: Attribute.Component<'women-sizes.w12-m10-5'> &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::women-size.women-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::women-size.women-size',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::women-size.women-size',
+      'oneToMany',
+      'api::women-size.women-size'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Shared {
     export interface ContentTypes {
@@ -1605,8 +2123,11 @@ declare module '@strapi/strapi' {
       'api::banner-section.banner-section': ApiBannerSectionBannerSection;
       'api::country.country': ApiCountryCountry;
       'api::goods-page.goods-page': ApiGoodsPageGoodsPage;
+      'api::home-page.home-page': ApiHomePageHomePage;
+      'api::kid-size.kid-size': ApiKidSizeKidSize;
       'api::language.language': ApiLanguageLanguage;
       'api::layout-header.layout-header': ApiLayoutHeaderLayoutHeader;
+      'api::men-size.men-size': ApiMenSizeMenSize;
       'api::page-home.page-home': ApiPageHomePageHome;
       'api::page-shoe.page-shoe': ApiPageShoePageShoe;
       'api::section-main-title.section-main-title': ApiSectionMainTitleSectionMainTitle;
@@ -1617,6 +2138,7 @@ declare module '@strapi/strapi' {
       'api::shoe.shoe': ApiShoeShoe;
       'api::size.size': ApiSizeSize;
       'api::type.type': ApiTypeType;
+      'api::women-size.women-size': ApiWomenSizeWomenSize;
     }
   }
 }

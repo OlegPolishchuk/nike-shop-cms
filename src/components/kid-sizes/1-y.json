@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_kid_sizes_1_ys",
+  "info": {
+    "displayName": "1Y"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "1Y"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "size",
     "pluralName": "sizes",
-    "displayName": "Size"
+    "displayName": "Size",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,24 +16,15 @@
     }
   },
   "attributes": {
-    "name": {
+    "Sizes": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "values": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "regex": "^\\w+(?:(?:,\\s\\w+)+|(?:\\s\\w+)+)$",
+      "component": "settings.size",
       "required": true
     }
   }

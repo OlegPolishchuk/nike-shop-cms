@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_kid_sizes_11_cs",
+  "info": {
+    "displayName": "11C"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "11C"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "collectionName": "components_settings_men_sizes",
+  "info": {
+    "displayName": "MenSizes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "m7": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m7-w8-5",
+      "required": true
+    },
+    "m75": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m7-5-w9",
+      "required": true
+    },
+    "m8": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m8-w9-5",
+      "required": true
+    },
+    "m85": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m8-5-w10",
+      "required": true
+    },
+    "m9": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m9-w10-5",
+      "required": true
+    },
+    "n95": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m9-5-w11",
+      "required": true
+    },
+    "m10": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m10-w11-5",
+      "required": true
+    },
+    "m105": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m10-5-w12",
+      "required": true
+    },
+    "m11": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m11-w12-5",
+      "required": true
+    },
+    "m115": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m11-5-w13",
+      "required": true
+    },
+    "m12": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m12-w13-5",
+      "required": true
+    },
+    "m125": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m12-5-w14",
+      "required": true
+    },
+    "m13": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m13-w14-5",
+      "required": true
+    },
+    "m14": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m14-w15-5",
+      "required": true
+    },
+    "m15": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m15-w16-5",
+      "required": true
+    },
+    "m16": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m16-w17-5",
+      "required": true
+    },
+    "m17": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m17-w18-5",
+      "required": true
+    },
+    "m18": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "men-sizes.m18-w19-5",
+      "required": true
+    }
+  }
+}

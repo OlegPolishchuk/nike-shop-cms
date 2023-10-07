@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w7_m5_5s",
+  "info": {
+    "displayName": "W7/M5.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 7 / M 5.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

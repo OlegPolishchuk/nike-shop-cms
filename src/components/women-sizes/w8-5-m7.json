@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w8_5_m7s",
+  "info": {
+    "displayName": "W8.5/M7"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 8.5 / M 7",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

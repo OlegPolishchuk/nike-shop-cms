@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m8_5_w10s",
+  "info": {
+    "displayName": "M8.5/W10"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 8.5 / W 10",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m10_5_w12s",
+  "info": {
+    "displayName": "M10.5/W12"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 10.5 / W 12",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w9_m7_5s",
+  "info": {
+    "displayName": "W9/M7.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 9 / M 7.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

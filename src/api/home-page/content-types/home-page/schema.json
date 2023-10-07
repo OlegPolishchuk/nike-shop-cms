@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "section_main_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-main-title.section-main-title"
+    },
+    "banner_section": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::banner-section.banner-section"
+    },
+    "section_membership": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-membership.section-membership"
+    },
+    "section_popular": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-popular.section-popular"
+    },
+    "section_trend": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::section-trend.section-trend"
+    }
+  }
+}

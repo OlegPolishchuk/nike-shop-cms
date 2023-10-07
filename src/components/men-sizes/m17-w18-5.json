@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_men_sizes_m17_w18_5s",
+  "info": {
+    "displayName": "M17/W18.5",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 17 / W 18.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

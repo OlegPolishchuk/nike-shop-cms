@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w5_m3_5s",
+  "info": {
+    "displayName": "W5/M3.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 5 / M 3.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

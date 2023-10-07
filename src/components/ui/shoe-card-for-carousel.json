@@ -30,6 +30,11 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "section_shoes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section-shoe.section-shoe"
     }
   }
 }

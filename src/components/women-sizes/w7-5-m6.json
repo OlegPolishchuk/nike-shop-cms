@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w7_5_m6s",
+  "info": {
+    "displayName": "W7.5/M6"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 7.5 / M 6",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

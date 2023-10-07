@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m10_w11_5s",
+  "info": {
+    "displayName": "M10/W11.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 10 / W 11.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

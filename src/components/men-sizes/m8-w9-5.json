@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m8_w9_5s",
+  "info": {
+    "displayName": "M8/W9.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 8 / W 9.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

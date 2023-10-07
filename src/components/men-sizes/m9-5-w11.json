@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m9_5_w11s",
+  "info": {
+    "displayName": "M9.5/W11"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 9.5 / W 11",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

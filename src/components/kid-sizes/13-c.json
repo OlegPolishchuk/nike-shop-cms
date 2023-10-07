@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_kid_sizes_13_cs",
+  "info": {
+    "displayName": "13C"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "13C"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

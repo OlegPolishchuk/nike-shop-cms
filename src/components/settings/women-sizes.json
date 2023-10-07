@@ -1,0 +1,174 @@
+{
+  "collectionName": "components_settings_women_sizes",
+  "info": {
+    "displayName": "WomenSizes"
+  },
+  "options": {},
+  "attributes": {
+    "w5": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w5-m3-5",
+      "required": true
+    },
+    "w55": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w5-5-m4",
+      "required": true
+    },
+    "w6": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w6-m4-5",
+      "required": true
+    },
+    "w65": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w6-5-m5",
+      "required": true
+    },
+    "w7": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w7-m5-5",
+      "required": true
+    },
+    "w75": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w7-5-m6",
+      "required": true
+    },
+    "w8": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w8-m6-5",
+      "required": true
+    },
+    "w85": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w8-5-m7",
+      "required": true
+    },
+    "w9": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w9-m7-5",
+      "required": true
+    },
+    "w95": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w9-5-m8",
+      "required": true
+    },
+    "w10": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w10-m8-5",
+      "required": true
+    },
+    "w105": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w10-5-m9",
+      "required": true
+    },
+    "w11": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w11-m9-5",
+      "required": true
+    },
+    "w115": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w11-5-m10",
+      "required": true
+    },
+    "w12": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "women-sizes.w12-m10-5",
+      "required": true
+    }
+  }
+}

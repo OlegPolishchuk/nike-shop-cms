@@ -1,0 +1,141 @@
+{
+  "collectionName": "components_settings_kid_sizes",
+  "info": {
+    "displayName": "KidSizes"
+  },
+  "options": {},
+  "attributes": {
+    "c105": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.10-5-c",
+      "required": true
+    },
+    "c11": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.11-c",
+      "required": true
+    },
+    "c115": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.11-5-c",
+      "required": true
+    },
+    "c12": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.12-c",
+      "required": true
+    },
+    "c125": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.12-5-c",
+      "required": true
+    },
+    "c13": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.13-c",
+      "required": true
+    },
+    "c135": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.13-5-c",
+      "required": true
+    },
+    "y1": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.1-y",
+      "required": true
+    },
+    "y15": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.1-5-y",
+      "required": true
+    },
+    "y2": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.2-y",
+      "required": true
+    },
+    "y25": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.2-5-y",
+      "required": true
+    },
+    "y3": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "kid-sizes.3-y",
+      "required": true
+    }
+  }
+}

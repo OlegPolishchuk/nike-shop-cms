@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_sizes",
+  "info": {
+    "displayName": "Sizes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Sizes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "settings.size",
+      "required": true
+    }
+  }
+}

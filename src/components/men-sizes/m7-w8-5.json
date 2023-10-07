@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_men_sizes_m7_w8_5s",
+  "info": {
+    "displayName": "M7/W8.5"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "M 7 / W 8.5",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

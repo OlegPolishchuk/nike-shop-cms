@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w9_5_m8s",
+  "info": {
+    "displayName": "W9.5/M8"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 9.5 / M 8",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

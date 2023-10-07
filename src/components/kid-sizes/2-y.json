@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_kid_sizes_2_ys",
+  "info": {
+    "displayName": "2Y"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "2Y"
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_women_sizes_w11_5_m10s",
+  "info": {
+    "displayName": "W11.5/M10"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "W 11.5 / M 10",
+      "required": true,
+      "unique": true
+    },
+    "inStock": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
