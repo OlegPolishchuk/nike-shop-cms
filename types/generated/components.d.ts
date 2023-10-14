@@ -12,6 +12,7 @@ export interface EntityShoeOption extends Schema.Component {
     tag: Attribute.String & Attribute.Required;
     price: Attribute.String & Attribute.Required;
     description: Attribute.RichText;
+    mainImage: Attribute.Media & Attribute.Required;
   };
 }
 
@@ -1138,7 +1139,7 @@ export interface WomenSizesW9M75 extends Schema.Component {
   };
 }
 
-declare module '@strapi/strapi' {
+declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'entity.shoe-option': EntityShoeOption;

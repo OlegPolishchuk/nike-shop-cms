@@ -97,6 +97,199 @@
       },
       "component": "ui.sizes",
       "required": true
+    },
+    "tags": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women",
+        "kids",
+        "basketball",
+        "shoes"
+      ],
+      "required": true,
+      "default": "shoes"
+    },
+    "gender": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "men",
+        "women",
+        "unisex"
+      ],
+      "required": true,
+      "default": "unisex"
+    },
+    "pageTitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "New&Futured",
+        "Men",
+        "Women",
+        "Kids",
+        "Accessories",
+        "Sale"
+      ],
+      "default": "New&Futured",
+      "required": true
+    },
+    "pageSubtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "NewArrivals",
+        "BestSellers",
+        "MemberProduct",
+        "Basketball&Lifestyle",
+        "UltimateSalgeUpTo60%Off",
+        "AllGifts",
+        "GoftsCards",
+        "Gifts%30&Under",
+        "New: ",
+        "AirForce",
+        "AirJordan",
+        "AirMax",
+        "Blazer",
+        "Pegasus",
+        "Metcon",
+        "LeBron",
+        "Fleece",
+        "Shoes",
+        "Clothing",
+        "New&UpcomingDrops",
+        "SNKRLaunchCalendar",
+        "JordanHeatCheck",
+        "Dunks",
+        "NikeLab",
+        "Drops101",
+        "Running",
+        "Training&Gym",
+        "NikeSB",
+        "Boots",
+        "Shoes$100&Under",
+        "Bit&Rall",
+        "FitnessShorts",
+        "Underwear",
+        "Hoodies",
+        "Pants",
+        "Socks",
+        "Basketball",
+        "Golf",
+        "Soccer",
+        "Baseball",
+        "Football",
+        "Valeyball",
+        "CrossCountry",
+        "Yoga"
+      ],
+      "default": "Shoes",
+      "required": true
+    },
+    "pageTitle2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "New&Futured",
+        "Men",
+        "Women",
+        "Kids",
+        "Accessories",
+        "Sale"
+      ],
+      "default": "Men"
+    },
+    "pageTitle3": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "New&Futured",
+        "Men",
+        "Women",
+        "Kids",
+        "Accessories",
+        "Sale"
+      ]
+    },
+    "pageSubtitle2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "NewArrivals",
+        "BestSellers",
+        "MemberProduct",
+        "Basketball&Lifestyle",
+        "UltimateSalgeUpTo60%Off",
+        "AllGifts",
+        "GoftsCards",
+        "Gifts%30&Under",
+        "New: ",
+        "AirForce",
+        "AirJordan",
+        "AirMax",
+        "Blazer",
+        "Pegasus",
+        "Metcon",
+        "LeBron",
+        "Fleece",
+        "Shoes",
+        "Clothing",
+        "New&UpcomingDrops",
+        "SNKRLaunchCalendar",
+        "JordanHeatCheck",
+        "Dunks",
+        "NikeLab",
+        "Drops101",
+        "Running",
+        "Training&Gym",
+        "NikeSB",
+        "Boots",
+        "Shoes$100&Under",
+        "Bit&Rall",
+        "FitnessShorts",
+        "Underwear",
+        "Hoodies",
+        "Pants",
+        "Socks",
+        "Basketball",
+        "Golf",
+        "Soccer",
+        "Baseball",
+        "Football",
+        "Valeyball",
+        "CrossCountry",
+        "Yoga"
+      ]
     }
   }
 }
