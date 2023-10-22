@@ -25,23 +25,28 @@
       "type": "string",
       "required": true
     },
-    "price": {
+    "priceSt": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "richtext"
     },
     "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "default": 100
     }
   }
 }

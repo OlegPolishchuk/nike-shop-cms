@@ -10,9 +10,10 @@ export interface EntityShoeOption extends Schema.Component {
     medias: Attribute.Media;
     title: Attribute.String & Attribute.Required;
     tag: Attribute.String & Attribute.Required;
-    price: Attribute.String & Attribute.Required;
+    priceSt: Attribute.String;
     description: Attribute.RichText;
     mainImage: Attribute.Media & Attribute.Required;
+    price: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<100>;
   };
 }
 
